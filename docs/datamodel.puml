@@ -1,0 +1,20 @@
+@startuml
+'https://plantuml.com/ie-diagram
+
+entity Book {
+* ISBN-13
+--
+* Publisher
+* Title
+Edition
+ISBN-10
+}
+
+entity Author {
+* author_id
+--
+Name
+}
+
+Book |o..o{ Author
+@enduml
